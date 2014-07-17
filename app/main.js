@@ -285,11 +285,11 @@ Game.prototype.loop = function() {
 
   if (this.keys[this.keyCodes.FL] || this.keys[this.keyCodes.FR]) {
 
-  if (this.shots.length > 0) {
-    if (Math.abs(this.character.x - this.shots[this.shots.length - 1].x) <= 100) {
-      this.too_near = true;
+    if (this.shots.length > 0) {
+      if (Math.abs(this.character.x - this.shots[this.shots.length - 1].x) <= 100) {
+        this.too_near = true;
+      }
     }
-  }
 
     if (!this.too_near)
       this.shots.push({
