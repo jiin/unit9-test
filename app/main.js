@@ -278,7 +278,7 @@ Game.prototype.loop = function() {
     }
 
     for(i = 0; i < this.shots.length; i++) {
-      this.ctx.fillStyle = '#f39c12';
+      this.ctx.fillStyle = '#d35400';
       this.ctx.fillRect(this.shots[i].x, this.shots[i].y, this.shots[i].w, this.shots[i].h);
     }
   }
