@@ -278,18 +278,18 @@ Game.prototype.loop = function() {
     }
 
     for(i = 0; i < this.shots.length; i++) {
-      this.ctx.fillStyle = '#f39c12';
+      this.ctx.fillStyle = '#d35400';
       this.ctx.fillRect(this.shots[i].x, this.shots[i].y, this.shots[i].w, this.shots[i].h);
     }
   }
 
   if (this.keys[this.keyCodes.FL] || this.keys[this.keyCodes.FR]) {
 
-  if (this.shots.length > 0) {
-    if (Math.abs(this.character.x - this.shots[this.shots.length - 1].x) <= 100) {
-      this.too_near = true;
+    if (this.shots.length > 0) {
+      if (Math.abs(this.character.x - this.shots[this.shots.length - 1].x) <= 100) {
+        this.too_near = true;
+      }
     }
-  }
 
     if (!this.too_near)
       this.shots.push({

@@ -21,7 +21,11 @@ div#stats {
   background:#FFFFFF;
   position: absolute;
   font-family: monospace;
-  font-size: 15px;
+  font-size: 12px;
+}
+
+div#stats-tutorial ul li {
+  list-style-type: square;
 }
 
 div#stats div#stats-hp-container {

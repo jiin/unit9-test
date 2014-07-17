@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 
     <title>Unit9 - HTML5 Canvas game example</title>
 
-    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="dist/style.min.css">
     <script src="dist/main.min.js"></script>
   </head>
@@ -18,6 +18,15 @@
         </div>
       </div>
       <p id="stats-frame">Frame: <span id="stats-frame-value"></span></p>
+      <div id="stats-tutorial">
+        <p>Tutorial:</p>
+        <ul>
+          <li>Press <strong>WASD</strong> to move</li>
+          <li>Keep pressing <strong>W</strong> to fly</li>
+          <li>Press <strong>K</strong> to shot left</li>
+          <li>Press <strong>L</strong> to shot right</li>
+        </ul>
+      </div>
     </div>
     <canvas id="canvas" width="1200" height="800"></canvas>
     <script>
